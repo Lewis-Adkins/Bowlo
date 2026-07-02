@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bd7ej6vcw6qyt"]
+
+[ext_resource type="Script" uid="uid://bgyrhmb8nfyl" path="res://Main.cs" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://haawd2xwxpst" path="res://Entities/Characters/Bowlo/Bowlo.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cd1i5pnhggujl" path="res://Entities/Environment/BowlingAlley.tscn" id="3_h2yge"]
+
+[node name="main" type="Node3D" unique_id=617311883]
+script = ExtResource("1_ig7tw")
+
+[node name="Bowlo" parent="." unique_id=397368680 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="BowlingAlley" parent="." unique_id=137348818 instance=ExtResource("3_h2yge")]

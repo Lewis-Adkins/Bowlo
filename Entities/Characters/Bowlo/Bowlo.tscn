@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://haawd2xwxpst"]
+
+[ext_resource type="Script" uid="uid://ttidediu54rm" path="res://Entities/Characters/Bowlo/Bowlo.cs" id="1_2xm5r"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_u0ync"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xm2m"]
+albedo_color = Color(0.3725709, 0.3001664, 0.8154119, 1)
+
+[node name="Bowlo" type="Node3D" unique_id=397368680]
+script = ExtResource("1_2xm5r")
+
+[node name="BowloMeshInstance3D" type="MeshInstance3D" parent="." unique_id=1127021738]
+mesh = SubResource("CapsuleMesh_u0ync")
+surface_material_override/0 = SubResource("StandardMaterial3D_0xm2m")
+
+[node name="BowloCamera3D" type="Camera3D" parent="." unique_id=934384656]
+transform = Transform3D(1, 0, 0, 0, 0.97465813, 0.22369957, 0, -0.22369957, 0.97465813, 0, 0.7682353, 1.9290972)
